@@ -15,7 +15,7 @@ If you're on Ubuntu, type `sudo apt-get install python python-pip`.
 Installation
 ------------
 
-Run the following commands:
+Assuming you have `python`, `pip` and `git` installed, run the following commands:
 
 ```shell
 git clone https://github.com/pwittchen/pkup.git
