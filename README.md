@@ -2,7 +2,7 @@ pkup
 ====
 semi-automated generating of PKUP report
 
-PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Every month every employee of my current company needs to generate PKUP report. It's legal issue, which allows to pay lower taxes due to creative work. Preparing such report is boring & repeatable work, which can be automated. That's why this project was created.
+PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Every month every employee of my current company needs to generate PKUP report. It's legal issue, which allows to pay lower income taxes due to creative work. Preparing such report is boring & repeatable work, which can be automated. That's why this project was created.
 
 Requirements
 ------------
