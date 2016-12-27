@@ -18,7 +18,7 @@ Installation
 Run the following commands:
 
 ```shell
-git clone git@github.com:pwittchen/pkup.git
+git clone https://github.com/pwittchen/pkup.git
 cd pkup
 ./install.sh
 ```
