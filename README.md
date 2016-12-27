@@ -28,7 +28,7 @@ Then, edit `~/.pkup.conf` file to personalize your future reports.
 Usage
 -----
 
-```
+```shell
 pkup -m "<message with description of your work>"
 ```
 
