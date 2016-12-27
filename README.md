@@ -23,7 +23,7 @@ cd pkup
 ./install.sh
 ```
 
-Then, edit `~/.pkup.conf` file to personalize your future reports
+Then, edit `~/.pkup.conf` file to personalize your future reports.
 
 Usage
 -----
