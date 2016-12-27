@@ -32,3 +32,4 @@ Usage
 pkup -m <message with description of your work>
 ```
 
+This command will generate `*.diff` files with changes made by user in defined repositories and appropriate report in `*.docx` file. Location of the reports and `*.diff` files is defined in `.pkup.conf` file and can be adjusted to user's needs.
