@@ -10,7 +10,7 @@ Requirements
 
 If you're on macOS and have `homebrew` installed, just type: `brew install python3`.
 
-If you're on Ubuntu, type `sudo apt-get install python` and then `sudo apt-get install python-pip`.
+If you're on Ubuntu, type `sudo apt-get install python python-pip`.
 
 Installation
 ------------
