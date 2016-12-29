@@ -6,11 +6,13 @@ PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Ev
 
 Requirements
 ------------
-`Python` & `Pip` are required to use this project.
+- python
+- pip
 
-If you're on macOS and have `homebrew` installed, just type: `brew install python3`.
+### Satisfying requirements
 
-If you're on Ubuntu, type `sudo apt-get install python python-pip`.
+- **macOS**: `brew install python3`
+- **Ubuntu**: `sudo apt-get install python python-pip`
 
 Installation
 ------------
