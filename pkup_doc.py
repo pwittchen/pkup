@@ -6,7 +6,7 @@
 from __future__ import unicode_literals
 from docx import Document
 from docx.shared import Inches
-from datetime import date
+from datetime import date, datetime, timedelta
 import sys, getopt
 
 def generate_report():
@@ -34,7 +34,8 @@ def generate_dates():
     generate_bold_text('Okres')
     table = document.add_table(rows=2, cols=2)
     table.style = 'Table Grid'
-    from_date = "20.%d.%d" % (date.today().month - 1, date.today().year)
+    date_twenty_days_ago = datetime.today() - timedelta(days=20)
+    from_date = "20.%d.%d" % (date_twenty_days_ago.month, date_twenty_days_ago.year)
     to_date = date.today().strftime('%d.%m.%Y')
     date_range = "%s - %s" % (from_date, to_date)
     set_row(table, 0, "Okres raportowany od 20 do 19 dnia miesiąca", date_range)

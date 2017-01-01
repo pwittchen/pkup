@@ -19,14 +19,18 @@ showHelp() {
 
 setAfterDate() {
   currentMonth=$(date +%m)
+  currentYear=$(date +%Y)
+
   if [ $currentMonth -eq "1" ]; then
     lastMonth=12
+    yearsToRemove=1
+    year=$(echo "$currentYear-$yearsToRemove" | bc)
   else
     monthsToRemove=1
     lastMonth=$(echo "$currentMonth-$monthsToRemove" | bc)
+    year=$currentYear
   fi
 
-  year=$(date +%Y)
   day=20
   afterDate="$year-$lastMonth-$day"
 }
