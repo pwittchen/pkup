@@ -1,4 +1,4 @@
-pkup
+pkup [![Build Status](https://travis-ci.org/pwittchen/pkup.svg?branch=master)](https://travis-ci.org/pwittchen/pkup)
 ====
 semi-automated generating of PKUP report
 
