@@ -44,3 +44,14 @@ To uninstall scripts, type:
 ```shell
 ./uninstall.sh
 ```
+
+Tests
+-----
+
+To run python tests, type:
+
+```shell
+./pkup_doc_test.py
+```
+
+**Please note**: Tests are quite poor right now and require improvements.
