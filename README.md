@@ -12,7 +12,8 @@ Requirements
 ### Satisfying requirements
 
 - **macOS**: `brew install python3`
-- **Ubuntu**: `sudo apt-get install python python-pip`
+- **Ubuntu**: `sudo apt-get install python python-pip` (on other distros simply use another package managers)
+- **MS Windows**: this solution wasn't tested on MS Windows, but it should work with [Python](https://www.python.org/downloads/) and [Cygwin](https://cygwin.com/install.html). Here's a good resource regarding this topic: https://www.davidbaumgold.com/tutorials/set-up-python-windows/.
 
 Installation
 ------------
