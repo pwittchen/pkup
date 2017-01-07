@@ -13,7 +13,7 @@ Requirements
 
 - **macOS**: `brew install python3`
 - **Ubuntu**: `sudo apt-get install python python-pip` (on other **Linux** distros simply use another package manager)
-- **MS Windows**: this solution wasn't tested on MS Windows, but it should work with [Python](https://www.python.org/downloads/) and [Cygwin](https://cygwin.com/install.html). Here's a good resource regarding this topic: https://www.davidbaumgold.com/tutorials/set-up-python-windows/.
+- **MS Windows**: this solution wasn't tested on MS Windows, but it should work with [Python](https://www.python.org/downloads/) and [Cygwin](https://cygwin.com/install.html). Here's a good resource regarding this topic: https://www.davidbaumgold.com/tutorials/set-up-python-windows/. Free VMs with Windows for non-Windows users, who want to perform tests, can be downloaded here: https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/.
 
 Installation
 ------------
