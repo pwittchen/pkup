@@ -63,7 +63,7 @@ Tests
 To run python tests, type:
 
 ```shell
-./pkup_doc_test.py
+./pkup_test.py
 ```
 
 **Please note**: Tests are quite poor right now and require improvements.
