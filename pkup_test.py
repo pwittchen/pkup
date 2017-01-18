@@ -4,7 +4,7 @@
 import pkup_doc
 import unittest
 
-class TestStringMethods(unittest.TestCase):
+class TestPkupDocMethods(unittest.TestCase):
 
     def test_create_document(self):
         pkup_doc.create_document()
