@@ -6,6 +6,7 @@ PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Ev
 
 Requirements
 ------------
+- unix shell
 - python
 - pip
 
