@@ -43,10 +43,7 @@ def generate_dates():
     set_row(table, 1, "Data sporządzenia raportu", to_date)
 
 def add_zero_prefix(number):
-    if(number < 10):
-        return "0%d" % number
-    else:
-        return "%d" % number
+    return "0%d" % number if(number < 10) else "%d" % number
 
 def generate_personal_data():
     generate_bold_text('Dane osobowe')
