@@ -35,11 +35,18 @@ def generate_dates():
     table = document.add_table(rows=2, cols=2)
     table.style = 'Table Grid'
     date_twenty_days_ago = datetime.today() - timedelta(days=20)
-    from_date = "19.%d.%d" % (date_twenty_days_ago.month, date_twenty_days_ago.year)
+    month_twenty_days_ago = add_zero_prefix(date_twenty_days_ago.month)
+    from_date = "19.%s.%d" % (month_twenty_days_ago, date_twenty_days_ago.year)
     to_date = date.today().strftime('%d.%m.%Y')
     date_range = "%s - %s" % (from_date, to_date)
     set_row(table, 0, "Okres raportowany od 19 do 18 dnia miesiąca", date_range)
     set_row(table, 1, "Data sporządzenia raportu", to_date)
+
+def add_zero_prefix(number):
+    if(number < 10):
+        return "0%d" % number
+    else:
+        return "%d" % number
 
 def generate_personal_data():
     generate_bold_text('Dane osobowe')
@@ -72,7 +79,8 @@ def generate_bold_text(text):
 def save_report():
     name, surname = employee_name.split(" ")
     doc_prefix = (name[:1] + surname[:2]).upper()
-    file_name = "%s_raport_pkup_%d_%d.docx" % (doc_prefix, date.today().month, date.today().year)
+    current_month = add_zero_prefix(date.today().month)
+    file_name = "%s_raport_pkup_%s_%d.docx" % (doc_prefix, current_month, date.today().year)
     full_file_path = dir_path + file_name
     document.save(full_file_path)
     print('report saved successfully to: %s' % (full_file_path))
