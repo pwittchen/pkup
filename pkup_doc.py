@@ -75,7 +75,7 @@ def save_report():
     file_name = "%s_raport_pkup_%d_%d.docx" % (doc_prefix, date.today().month, date.today().year)
     full_file_path = dir_path + file_name
     document.save(full_file_path)
-    print 'report saved successfully to: %s' % (full_file_path)
+    print('report saved successfully to: %s' % (full_file_path))
 
 def main(argv):
     global employee_name
@@ -89,11 +89,11 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"n:r:d:m:t",["name=","role=","department=","manager=","text="])
     except getopt.GetoptError:
-        print help_message
+        print(help_message)
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print help_message
+            print(help_message)
             sys.exit()
         elif opt in ("-n", "--name"):
             employee_name = arg.decode('utf-8')
