@@ -27,7 +27,7 @@ cd pkup
 ./install.sh
 ```
 
-Then, edit `~/.pkup.conf` file to personalize your future reports.
+Then, edit `~/.pkup.conf` file to personalize your future reports. Remember pkup script also takes into consideration your user name in `.gitconfig` file.
 
 Usage
 -----

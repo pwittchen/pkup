@@ -84,10 +84,11 @@ saveReport() {
   savedDiffFiles=$(ls | grep .$fileExtension)
   filesDesc=$'\n\nPliki zawierające opis zmian:\n'
   pythonScriptName="pkup_doc.py"
+  gitUserName=$(git config user.name)
   setPythonScriptPath
 
   python "$scriptPath""$pythonScriptName" \
-    --name "$yDEV_NAME $yDEV_SURNAME" \
+    --name "$gitUserName" \
     --role "$yDEV_ROLE" \
     --department "$yDEV_DEPARTMENT" \
     --manager "$yDEV_MANAGER" \
@@ -96,8 +97,10 @@ saveReport() {
 
 main() {
   loadConfiguration
+  gitUserName=$(git config user.name)
+  IFS=' ' eval 'gitUserNameArray=($gitUserName)'  
   dateFormat=$(date +'%Y%m')
-  filePath=$yDEV_REPORT_DIR""$yDEV_SURNAME"_"$yDEV_NAME"_"$dateFormat
+  filePath=$yDEV_REPORT_DIR""${gitUserNameArray[1]}"_"${gitUserNameArray[0]}"_"$dateFormat
   fileExtension=diff
   projectDir=$(pwd)
 
