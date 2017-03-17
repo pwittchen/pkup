@@ -35,10 +35,10 @@ def generate_dates():
     table = document.add_table(rows=2, cols=2)
     table.style = 'Table Grid'
     date_twenty_days_ago = datetime.today() - timedelta(days=20)
-    from_date = "20.%d.%d" % (date_twenty_days_ago.month, date_twenty_days_ago.year)
+    from_date = "19.%d.%d" % (date_twenty_days_ago.month, date_twenty_days_ago.year)
     to_date = date.today().strftime('%d.%m.%Y')
     date_range = "%s - %s" % (from_date, to_date)
-    set_row(table, 0, "Okres raportowany od 20 do 19 dnia miesiąca", date_range)
+    set_row(table, 0, "Okres raportowany od 19 do 18 dnia miesiąca", date_range)
     set_row(table, 1, "Data sporządzenia raportu", to_date)
 
 def generate_personal_data():
