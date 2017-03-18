@@ -2,4 +2,4 @@ language: python
 python:
   - "2.7"
 install: "pip install -r requirements.txt"
-script: python pkup_test.py
+script: python pkup_doc_test.py
