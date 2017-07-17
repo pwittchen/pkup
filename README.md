@@ -29,6 +29,18 @@ cd pkup
 
 Then, edit `~/.pkup.conf` file to personalize your future reports. Remember that pkup script also takes into consideration your user name in `.gitconfig` file and it should be in format: `Name Surname`.
 
+If you have problem with installing dependencies, try to install them manually via `pip` in the following way:
+
+```
+pip install -r requirements.txt
+```
+
+or
+
+```
+pip install python-docx
+```
+
 Usage
 -----
 
