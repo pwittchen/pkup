@@ -46,11 +46,27 @@ If it doesn't work, try to call `pip3` instead of `pip`.
 Usage
 -----
 
+Parameters of the `pkup` script are as follows:
+
+```shell
+-h                             shows help
+-m "<message for the report>"  generates a report with a provided message
+-g                             generates a report with an empty message
+```
+
+exemplary usage of the script is as follows:
+
 ```shell
 pkup -m "<message with description of your work>"
 ```
 
 This command will generate `*.diff` files with changes made by user in defined repositories and appropriate report in `*.docx` file. Location of the reports and `*.diff` files is defined in `.pkup.conf` file and can be adjusted to user's needs.
+
+You can also use script with `-g` parameter and fill in the `*.docx` document later:
+
+```shell
+pkup -g
+```
 
 To show help, type:
 

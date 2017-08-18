@@ -13,8 +13,16 @@ msg() {
 }
 
 showHelp() {
-  echo 'pkup is a script for generating PKUP reports'
-  echo 'usage: pkup -m "<message for the report>"'
+  echo '
+  pkup is a script for generating PKUP reports
+  it creates *.diff files from the git repositories and creates *.docx document
+
+  usage:
+
+    -h                             shows help
+    -m "<message for the report>"  generates a report with a provided message
+    -g                             generates a report with an empty message
+  '
 }
 
 setAfterDate() {
@@ -104,13 +112,17 @@ main() {
   fileExtension=diff
   projectDir=$(pwd)
 
-  while getopts "hm" opt; do
+  while getopts "hmg" opt; do
       case "$opt" in
       h)
           showHelp
           exit 0
           ;;
       m)  reportText=$2
+          parseRepos
+          saveReport
+          ;;
+      g)  reportText=""
           parseRepos
           saveReport
           ;;
