@@ -56,7 +56,7 @@ def generate_personal_data():
 
 def generate_work_results():
     generate_bold_text('Raportowane wyniki pracy twórczej')
-    table = document.add_table(rows=2, cols=2)
+    table = document.add_table(rows=3, cols=2)
     table.style = 'Table Grid'
     set_row(table, 0, "Rodzaj wyniku pracy twórczej", "Opis wykonywanych czynności")
     set_row(table, 1, "Prace przygotowawcze")
