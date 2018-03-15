@@ -59,7 +59,8 @@ def generate_work_results():
     table = document.add_table(rows=2, cols=2)
     table.style = 'Table Grid'
     set_row(table, 0, "Rodzaj wyniku pracy twórczej", "Opis wykonywanych czynności")
-    set_row(table, 1, "Prace programistyczne i specyfikacja techniczna", report_text)
+    set_row(table, 1, "Prace przygotowawcze")
+    set_row(table, 2, "Prace programistyczne i specyfikacja techniczna", report_text)
 
 def set_row(table, row_number, label, value):
     table.rows[row_number].cells[0].text = label
