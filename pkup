@@ -95,7 +95,7 @@ saveReport() {
   gitUserName=$(git config user.name)
   setPythonScriptPath
 
-  python "$scriptPath""$pythonScriptName" \
+  python3 "$scriptPath""$pythonScriptName" \
     --name "$gitUserName" \
     --role "$yDEV_ROLE" \
     --department "$yDEV_DEPARTMENT" \
