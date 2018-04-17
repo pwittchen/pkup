@@ -102,15 +102,15 @@ def main(argv):
             print(help_message)
             sys.exit()
         elif opt in ("-n", "--name"):
-            employee_name = arg.decode('utf-8')
+            employee_name = arg
         elif opt in ("-r", "--role"):
-            employee_role = arg.decode('utf-8')
+            employee_role = arg
         elif opt in ("-d", "--department"):
-            employee_dept = arg.decode('utf-8')
+            employee_dept = arg
         elif opt in ("-m", "--manager"):
-            employee_mgr = arg.decode('utf-8')
+            employee_mgr = arg
         elif opt in ("-t", "--text"):
-            report_text = arg.decode('utf-8')
+            report_text = arg
 
     generate_report()
 
