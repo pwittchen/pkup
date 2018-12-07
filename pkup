@@ -49,7 +49,7 @@ saveDiff() {
   cd $yDEV_PROJECTS_DIR/"$1"
   gitUserName=$(git config user.name)
   mkdir -p "$filePath"
-  git log --author="$gitUserName" -p --after="$afterDate" > "$filePath"/"$1"."$fileExtension"
+  git log --author="$gitUserName" -p --after="$afterDate" > "$filePath"/"$1"."$fileExtension" || true
 }
 
 removeDiffIfEmpty() {
