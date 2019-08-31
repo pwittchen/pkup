@@ -2,7 +2,7 @@ pkup [![Build Status](https://travis-ci.org/pwittchen/pkup.svg?branch=master)](h
 ====
 semi-automated generating of PKUP report
 
-PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Every month every employee of my current company needs to generate PKUP report. It's legal issue, which allows to pay lower income taxes due to creative work. Preparing such report is boring & repeatable work, which can be automated. That's why this project was created. [Read more in the article on the blog](http://wittchen.io/2017/01/01/automate-boring-stuff/).
+PKUP stands for *Podwyższone Koszty Uzyskania Przychodu* in Polish language. Every month every employee of my current company needs to generate PKUP report. It's legal issue, which allows to pay lower income taxes due to creative work. Preparing such report is boring & repeatable work, which can be automated. That's why this project was created. [Read more in the article on the blog](http://wittchen.io/automate-boring-stuff/).
 
 Requirements
 ------------
